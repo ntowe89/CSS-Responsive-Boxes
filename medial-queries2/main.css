@@ -1,48 +1,86 @@
 body {
   background: papayawhip;
   margin: 0;
+  border: none;
 }
 *{
-  border: 1px solid black;
+  border: 3px solid black;
 }
 .container{
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
   justify-content: space-between;
 }
 .section{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  min-width: 95%;
+  flex-direction: row;
+  flex-grow: 2;
+  margin: 2%;
   border: none;
 }
 .a{
-  min-width: 95%;
-  min-height: 20vh;
-  margin: 0 auto;
-  margin-top: 2.5%;
+  flex-grow: 2;
+  margin: 2%;
 }
 .b{
-  min-width: 95%;
-  min-height: 30vh;
-  margin: 0 auto;
-}
-.c, .d, .e{
-  min-width: 30%;
-  min-height: 20vh;  
+  min-height: 50vh;
+  flex-grow: 3;
+  margin: 2%;
 }
 .f{
-  min-width: 95%;
-  min-height: 20vh;
-  margin: 0 auto;
-  margin-bottom: 2.5%;
+  flex-grow: 2;
+  margin: 2%;
 }
-@media (min-width: 600px){
+.c{
+  flex-grow: 2;
+}
+.d{
+  flex-grow: 2;
+  margin: 0 2%;
+}
+.e{
+  flex-grow: 2;
+}
+
+@media(min-width: 1000px){
   .container{
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+  .a{
+    width: 100%;
+    margin: 1% 1% .5% 1%;
+  }
+  .b{
+    max-width: 67%;
+    min-width: 67%;
+    flex-grow: 2;
+    min-height: 10vh;
+    margin: .5% 1%;
+  }
+  .section{
+    max-width: 67.5%;
+    min-width: 67.5%;
+    margin: .5% .5% 1% 1%;
+    
+  }
+  .f{
+    margin: .5% 1% 1% .5%;
+    position: absolute;
+    top: 300px;
+    left: 1320px;
+    height: 65.25vh;
+    width: 29.15%;
+  }
+  .c{
+    margin-right: .5%;
+  }
+  .d{
+    margin: 0 .5% 0 .5%;
+  }
+  .e{
+    margin: 0 .5%;
+  }
+
 }
