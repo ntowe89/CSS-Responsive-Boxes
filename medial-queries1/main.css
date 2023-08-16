@@ -1,3 +1,48 @@
 body {
   background: blanchedalmond;
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  border: none;
+}
+*{
+  border: 3px solid teal;
+}
+h2{
+  border: none;
+  
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+.a{
+  flex-grow: 2;
+  margin: 2%;
+}
+.b{
+  min-height: 60vh;
+  flex-grow: 5;
+  margin: 0 2%;
+}.c{
+  flex-grow: 2;
+  margin: 2%;
+}
+
+@media (min-width: 600px){
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a{
+    width: 100%;
+  }
+  .b{
+    margin: 2% 2%;
+  }
+  .c{
+    
+  }
 }
